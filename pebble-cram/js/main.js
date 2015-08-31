@@ -28,8 +28,8 @@ function loadOptions() {
   var $calTODAYBGColorPicker = $('#calTODAYBGColorPicker');
   var $dateboxTXTColorPicker = $('#dateboxTXTColorPicker');
   var $dateboxBGColorPicker = $('#dateboxBGColorPicker');
-  var $tzlefTXTColorPicker = $('#tzlefTXTColorPicker');
-  var $tzlefBGColorPicker = $('#tzlefBGColorPicker');
+  var $tzleftTXTColorPicker = $('#tzlefTXTColorPicker');
+  var $tzleftBGColorPicker = $('#tzlefBGColorPicker');
   var $tzmidTXTColorPicker = $('#tzmidTXTColorPicker');
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
@@ -49,8 +49,8 @@ function loadOptions() {
     $calTODAYBGColorPicker[0].value = localStorage.calTODAYBGColorPicker;
     $dateboxTXTColorPicker[0].value = localStorage.dateboxTXTColorPicker;
     $dateboxBGColorPicker[0].value = localStorage.dateboxBGColorPicker;
-    $tzlefTXTColorPicker[0].value = localStorage.tzlefTXTColorPicker;
-    $tzlefBGColorPicker[0].value = localStorage.tzlefBGColorPicker;
+    $tzleftTXTColorPicker[0].value = localStorage.tzlefTXTColorPicker;
+    $tzleftBGColorPicker[0].value = localStorage.tzlefBGColorPicker;
     $tzmidTXTColorPicker[0].value = localStorage.tzmidTXTColorPicker;
     $tzmidBGColorPicker[0].value = localStorage.tzmidBGColorPicker;
     $tzrightTXTColorPicker[0].value = localStorage.tzrightTXTColorPicker;
@@ -74,8 +74,8 @@ function getAndStoreConfigData() {
   var $calTODAYBGColorPicker = $('#calTODAYBGColorPicker');
   var $dateboxTXTColorPicker = $('#dateboxTXTColorPicker');
   var $dateboxBGColorPicker = $('#dateboxBGColorPicker');
-  var $tzlefTXTColorPicker = $('#tzlefTXTColorPicker');
-  var $tzlefBGColorPicker = $('#tzlefBGColorPicker');
+  var $tzleftTXTColorPicker = $('#tzlefTXTColorPicker');
+  var $tzleftBGColorPicker = $('#tzlefBGColorPicker');
   var $tzmidTXTColorPicker = $('#tzmidTXTColorPicker');
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
@@ -96,8 +96,8 @@ function getAndStoreConfigData() {
     calTODAYBGColorPicker: $calTODAYBGColorPicker.val(),
     dateboxTXTColorPicker: $dateboxTXTColorPicker.val(),
     dateboxBGColorPicker: $dateboxBGColorPicker.val(),
-    tzlefTXTColorPicker: $tzlefTXTColorPicker.val(),
-    tzlefBGColorPicker: $tzlefBGColorPicker.val(),
+    tzleftTXTColorPicker: $tzlefTXTColorPicker.val(),
+    tzleftBGColorPicker: $tzlefBGColorPicker.val(),
     tzmidTXTColorPicker: $tzmidTXTColorPicker.val(),
     tzmidBGColorPicker: $tzmidBGColorPicker.val(),
     tzrightTXTColorPicker: $tzrightTXTColorPicker.val(),
@@ -118,8 +118,8 @@ function getAndStoreConfigData() {
   localStorage.calTODAYBGColorPicker = options.calTODAYBGColorPicker;
   localStorage.dateboxTXTColorPicker = options.dateboxTXTColorPicker;
   localStorage.dateboxBGColorPicker = options.dateboxBGColorPicker;
-  localStorage.tzlefTXTColorPicker = options.tzlefTXTColorPicker;
-  localStorage.tzlefBGColorPicker = options.tzlefBGColorPicker;
+  localStorage.tzleftTXTColorPicker = options.tzlefTXTColorPicker;
+  localStorage.tzleftBGColorPicker = options.tzlefBGColorPicker;
   localStorage.tzmidTXTColorPicker = options.tzmidTXTColorPicker;
   localStorage.tzmidBGColorPicker = options.tzmidBGColorPicker;
   localStorage.tzrightTXTColorPicker = options.tzrightTXTColorPicker;
@@ -141,3 +141,4 @@ function getQueryParam(variable, defaultValue) {
   }
   return defaultValue || false;
 }
+
