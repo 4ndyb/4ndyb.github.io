@@ -1,0 +1,9 @@
+gnore build generated files
+build
+
+# Ignore waf lock file
+.lock-waf*
+
+# to get these run "bower install" in config dir
+bower_components
+
