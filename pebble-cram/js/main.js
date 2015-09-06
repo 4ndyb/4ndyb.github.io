@@ -34,6 +34,8 @@ function loadOptions() {
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
   var $tzrightBGColorPicker = $('#tzrightBGColorPicker');
+  var $tznowNUMtxtbox = $('#tznowNUMtxtbox');
+  var $tznowTXTtxtbox = $('#tznowTXTtxtbox');
 
   if (localStorage.backgroundColor) {
     $backgroundColorPicker[0].value = localStorage.backgroundColor;
@@ -55,7 +57,8 @@ function loadOptions() {
     $tzmidBGColorPicker[0].value = localStorage.tzmidBGColorPicker;
     $tzrightTXTColorPicker[0].value = localStorage.tzrightTXTColorPicker;
     $tzrightBGColorPicker[0].value = localStorage.tzrightBGColorPicker;
-
+    $tznowNUMtxtbox[0].value = localStorage.tznowNUMtxtbox;
+    $tznowTXTtxtbox[0].value = localStorage.tznowTXTtxtbox;
     //$timeFormatCheckbox[0].checked = localStorage.twentyFourHourFormat === 'true';
   }
 }
@@ -80,6 +83,8 @@ function getAndStoreConfigData() {
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
   var $tzrightBGColorPicker = $('#tzrightBGColorPicker');
+  var $tznowNUMtxtbox = $('#tznowNUMtxtbox');
+  var $tznowTXTtxtbox = $('#tznowTXTtxtbox');
   //var $timeFormatCheckbox = $('#timeFormatCheckbox');
 
   var options = {
@@ -101,7 +106,9 @@ function getAndStoreConfigData() {
     tzmidTXTColorPicker: $tzmidTXTColorPicker.val(),
     tzmidBGColorPicker: $tzmidBGColorPicker.val(),
     tzrightTXTColorPicker: $tzrightTXTColorPicker.val(),
-    tzrightBGColorPicker: $tzrightBGColorPicker.val()
+    tzrightBGColorPicker: $tzrightBGColorPicker.val(),
+    tznowNUMtxtbox: $tznowNUMtxtbox.val(),
+    tznowTXTtxtbox: $tznowTXTtxtbox.val()
     //twentyFourHourFormat: $timeFormatCheckbox[0].checked
   };
 
@@ -124,6 +131,8 @@ function getAndStoreConfigData() {
   localStorage.tzmidBGColorPicker = options.tzmidBGColorPicker;
   localStorage.tzrightTXTColorPicker = options.tzrightTXTColorPicker;
   localStorage.tzrightBGColorPicker = options.tzrightBGColorPicker;
+  localStorage.tznowNUMtxtbox = options.tznowNUMtxtbox;
+  localStorage.tznowTXTtxtbox = options.tznowTXTtxtbox;
   //localStorage.twentyFourHourFormat = options.twentyFourHourFormat;
 
   console.log('Got options: ' + JSON.stringify(options));
@@ -141,4 +150,3 @@ function getQueryParam(variable, defaultValue) {
   }
   return defaultValue || false;
 }
-
