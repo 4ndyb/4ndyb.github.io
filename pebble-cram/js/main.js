@@ -34,8 +34,12 @@ function loadOptions() {
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
   var $tzrightBGColorPicker = $('#tzrightBGColorPicker');
-  var $tznowNUMtxtbox = $('#tznowNUMtxtbox');
-  var $tznowTXTtxtbox = $('#tznowTXTtxtbox');
+  var $tzleftNUMtxtbox = $('#tzleftNUMtxtbox');
+  var $tzleftTXTtxtbox = $('#tzleftTXTtxtbox');
+  var $tzmidNUMtxtbox = $('#tzmidNUMtxtbox');
+  var $tzmidTXTtxtbox = $('#tzmidTXTtxtbox');
+  var $tzrightNUMtxtbox = $('#tzrightNUMtxtbox');
+  var $tzrightTXTtxtbox = $('#tzrightTXTtxtbox');
 
   if (localStorage.backgroundColor) {
     $backgroundColorPicker[0].value = localStorage.backgroundColor;
@@ -57,8 +61,12 @@ function loadOptions() {
     $tzmidBGColorPicker[0].value = localStorage.tzmidBGColorPicker;
     $tzrightTXTColorPicker[0].value = localStorage.tzrightTXTColorPicker;
     $tzrightBGColorPicker[0].value = localStorage.tzrightBGColorPicker;
-    $tznowNUMtxtbox[0].value = localStorage.tznowNUMtxtbox;
-    $tznowTXTtxtbox[0].value = localStorage.tznowTXTtxtbox;
+    $tzleftNUMtxtbox[0].value = localStorage.tzleftNUMtxtbox;
+    $tzleftTXTtxtbox[0].value = localStorage.tzleftTXTtxtbox;
+    $tzmidNUMtxtbox[0].value = localStorage.tzmidNUMtxtbox;
+    $tzmidTXTtxtbox[0].value = localStorage.tzmidTXTtxtbox;
+    $tzrightNUMtxtbox[0].value = localStorage.tzrightNUMtxtbox;
+    $tzrightTXTtxtbox[0].value = localStorage.tzrightTXTtxtbox;
     //$timeFormatCheckbox[0].checked = localStorage.twentyFourHourFormat === 'true';
   }
 }
@@ -83,8 +91,12 @@ function getAndStoreConfigData() {
   var $tzmidBGColorPicker = $('#tzmidBGColorPicker');
   var $tzrightTXTColorPicker = $('#tzrightTXTColorPicker');
   var $tzrightBGColorPicker = $('#tzrightBGColorPicker');
-  var $tznowNUMtxtbox = $('#tznowNUMtxtbox');
-  var $tznowTXTtxtbox = $('#tznowTXTtxtbox');
+  var $tzleftNUMtxtbox = $('#tzleftNUMtxtbox');
+  var $tzleftTXTtxtbox = $('#tzleftTXTtxtbox');
+  var $tzmidNUMtxtbox = $('#tzmidNUMtxtbox');
+  var $tzmidTXTtxtbox = $('#tzmidTXTtxtbox');
+  var $tzrightNUMtxtbox = $('#tzrightNUMtxtbox');
+  var $tzrightTXTtxtbox = $('#tzrightTXTtxtbox');
   //var $timeFormatCheckbox = $('#timeFormatCheckbox');
 
   var options = {
@@ -107,8 +119,12 @@ function getAndStoreConfigData() {
     tzmidBGColorPicker: $tzmidBGColorPicker.val(),
     tzrightTXTColorPicker: $tzrightTXTColorPicker.val(),
     tzrightBGColorPicker: $tzrightBGColorPicker.val(),
-    tznowNUMtxtbox: $tznowNUMtxtbox.val(),
-    tznowTXTtxtbox: $tznowTXTtxtbox.val()
+    tzleftNUMtxtbox: $tzleftNUMtxtbox.val(),
+    tzleftTXTtxtbox: $tzleftTXTtxtbox.val(),
+    tzmidNUMtxtbox: $tzmidNUMtxtbox.val(),
+    tzmidTXTtxtbox: $tzmidTXTtxtbox.val(),
+    tzrightNUMtxtbox: $tzrightNUMtxtbox.val(),
+    tzrightTXTtxtbox: $tzrightTXTtxtbox.val()
     //twentyFourHourFormat: $timeFormatCheckbox[0].checked
   };
 
@@ -131,10 +147,13 @@ function getAndStoreConfigData() {
   localStorage.tzmidBGColorPicker = options.tzmidBGColorPicker;
   localStorage.tzrightTXTColorPicker = options.tzrightTXTColorPicker;
   localStorage.tzrightBGColorPicker = options.tzrightBGColorPicker;
-  localStorage.tznowNUMtxtbox = options.tznowNUMtxtbox;
-  localStorage.tznowTXTtxtbox = options.tznowTXTtxtbox;
+  localStorage.tzleftNUMtxtbox = options.tzleftNUMtxtbox;
+localStorage.tzleftTXTtxtbox = options.tzleftTXTtxtbox;
+localStorage.tzmidNUMtxtbox = options.tzmidNUMtxtbox;
+localStorage.tzmidTXTtxtbox = options.tzmidTXTtxtbox;
+localStorage.tzrightNUMtxtbox = options.tzrightNUMtxtbox;
+localStorage.tzrightTXTtxtbox = options.tzrightTXTtxtbox;
   //localStorage.twentyFourHourFormat = options.twentyFourHourFormat;
-
   console.log('Got options: ' + JSON.stringify(options));
   return options;
 }
