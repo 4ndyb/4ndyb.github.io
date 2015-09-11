@@ -15,6 +15,7 @@ function submitHandler() {
 }
 
 function loadOptions() {
+  var $cityweatherTXTtxtbox = $('#cityweatherTXTtxtbox');
   var $backgroundColorPicker = $('#backgroundColorPicker');
   var $hourTXTColorPicker = $('#hourTXTColorPicker');
   var $hourBGColorPicker = $('#hourBGColorPicker');
@@ -42,6 +43,7 @@ function loadOptions() {
   var $tzrightTXTtxtbox = $('#tzrightTXTtxtbox');
 
   if (localStorage.backgroundColor) {
+    $cityweatherTXTtxtbox[0].value = localStorage.cityweatherTXTtxtbox;
     $backgroundColorPicker[0].value = localStorage.backgroundColor;
     $hourTXTColorPicker[0].value = localStorage.hourTXTColorPicker;
     $hourBGColorPicker[0].value = localStorage.hourBGColorPicker;
@@ -72,6 +74,7 @@ function loadOptions() {
 }
 
 function getAndStoreConfigData() {
+  var $cityweatherTXTtxtbox = $('#cityweatherTXTtxtbox');
   var $backgroundColorPicker = $('#backgroundColorPicker');
   var $hourTXTColorPicker = $('#hourTXTColorPicker');
   var $hourBGColorPicker = $('#hourBGColorPicker');
@@ -100,6 +103,7 @@ function getAndStoreConfigData() {
   //var $timeFormatCheckbox = $('#timeFormatCheckbox');
 
   var options = {
+    cityweatherTXTtxtbox: $cityweatherTXTtxtbox.val(),
     backgroundColor: $backgroundColorPicker.val(),
     hourTXTColorPicker: $hourTXTColorPicker.val(),
     hourBGColorPicker: $hourBGColorPicker.val(),
@@ -128,6 +132,7 @@ function getAndStoreConfigData() {
     //twentyFourHourFormat: $timeFormatCheckbox[0].checked
   };
 
+  localStorage.cityweatherTXTtxtbox = options.cityweatherTXTtxtbox;
   localStorage.backgroundColor = options.backgroundColor;
   localStorage.hourTXTColorPicker = options.hourTXTColorPicker;
   localStorage.hourBGColorPicker = options.hourBGColorPicker;
@@ -148,11 +153,11 @@ function getAndStoreConfigData() {
   localStorage.tzrightTXTColorPicker = options.tzrightTXTColorPicker;
   localStorage.tzrightBGColorPicker = options.tzrightBGColorPicker;
   localStorage.tzleftNUMtxtbox = options.tzleftNUMtxtbox;
-localStorage.tzleftTXTtxtbox = options.tzleftTXTtxtbox;
-localStorage.tzmidNUMtxtbox = options.tzmidNUMtxtbox;
-localStorage.tzmidTXTtxtbox = options.tzmidTXTtxtbox;
-localStorage.tzrightNUMtxtbox = options.tzrightNUMtxtbox;
-localStorage.tzrightTXTtxtbox = options.tzrightTXTtxtbox;
+  localStorage.tzleftTXTtxtbox = options.tzleftTXTtxtbox;
+  localStorage.tzmidNUMtxtbox = options.tzmidNUMtxtbox;
+  localStorage.tzmidTXTtxtbox = options.tzmidTXTtxtbox;
+  localStorage.tzrightNUMtxtbox = options.tzrightNUMtxtbox;
+  localStorage.tzrightTXTtxtbox = options.tzrightTXTtxtbox;
   //localStorage.twentyFourHourFormat = options.twentyFourHourFormat;
   console.log('Got options: ' + JSON.stringify(options));
   return options;
