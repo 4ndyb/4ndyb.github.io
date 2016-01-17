@@ -29,6 +29,8 @@ function loadOptions() {
   var $calTODAYBGColorPicker = $('#calTODAYBGColorPicker');
   var $caldateboxTXTColorPicker = $('#caldateboxTXTColorPicker');
   var $caldateboxBGColorPicker = $('#caldateboxBGColorPicker');
+  var $calmonthlabelTXTColorPicker= $('#calmonthlabelTXTColorPicker');
+  var $calmonthlabelBGColorPicker= $('#calmonthlabelBGColorPicker');
   var $tztopTXTColorPicker = $('#tztopTXTColorPicker');
   var $tztopBGColorPicker = $('#tztopBGColorPicker');
   var $tzmidTXTColorPicker = $('#tzmidTXTColorPicker');
@@ -56,6 +58,8 @@ function loadOptions() {
     $calTODAYBGColorPicker[0].value = localStorage.calTODAYBGColorPicker;
     $caldateboxTXTColorPicker[0].value = localStorage.caldateboxTXTColorPicker;
     $caldateboxBGColorPicker[0].value = localStorage.caldateboxBGColorPicker;
+    $calmonthlabelTXTColorPicker[0].value = localStorage.calmonthlabelTXTColorPicker;
+    $calmonthlabelBGColorPicker[0].value = localStorage.calmonthlabelBGColorPicker;
     $tztopTXTColorPicker[0].value = localStorage.tztopTXTColorPicker;
     $tztopBGColorPicker[0].value = localStorage.tztopBGColorPicker;
     $tzmidTXTColorPicker[0].value = localStorage.tzmidTXTColorPicker;
@@ -87,6 +91,8 @@ function getAndStoreConfigData() {
   var $calTODAYBGColorPicker = $('#calTODAYBGColorPicker');
   var $caldateboxTXTColorPicker = $('#caldateboxTXTColorPicker');
   var $caldateboxBGColorPicker = $('#caldateboxBGColorPicker');
+  var $calmonthlabelTXTColorPicker = $('#calmonthlabelTXTColorPicker');
+  var $calmonthlabelBGColorPicker = $('#calmonthlabelBGColorPicker');
   var $tztopTXTColorPicker = $('#tztopTXTColorPicker');
   var $tztopBGColorPicker = $('#tztopBGColorPicker');
   var $tzmidTXTColorPicker = $('#tzmidTXTColorPicker');
@@ -116,6 +122,8 @@ function getAndStoreConfigData() {
     calTODAYBGColorPicker: $calTODAYBGColorPicker.val(),
     caldateboxTXTColorPicker: $caldateboxTXTColorPicker.val(),
     caldateboxBGColorPicker: $caldateboxBGColorPicker.val(),
+    calmonthlabelTXTColorPicker: $calmonthlabelTXTColorPicker.val(),
+    calmonthlabelBGColorPicker: $calmonthlabelBGColorPicker.val(),
     tztopTXTColorPicker: $tztopTXTColorPicker.val(),
     tztopBGColorPicker: $tztopBGColorPicker.val(),
     tzmidTXTColorPicker: $tzmidTXTColorPicker.val(),
@@ -145,6 +153,8 @@ function getAndStoreConfigData() {
   localStorage.calTODAYBGColorPicker = options.calTODAYBGColorPicker;
   localStorage.caldateboxTXTColorPicker = options.caldateboxTXTColorPicker;
   localStorage.caldateboxBGColorPicker = options.caldateboxBGColorPicker;
+  localStorage.calmonthlabelTXTColorPicker= options.calmonthlabelTXTColorPicker;
+  localStorage.calmonthlabelBGColorPicker= options.calmonthlabelBGColorPicker;
   localStorage.tztopTXTColorPicker = options.tztopTXTColorPicker;
   localStorage.tztopBGColorPicker = options.tztopBGColorPicker;
   localStorage.tzmidTXTColorPicker = options.tzmidTXTColorPicker;
