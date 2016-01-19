@@ -78,12 +78,12 @@ function loadOptions() {
         $tzmidTXTtxtbox[0].value = localStorage.tzmidTXTtxtbox;
         $tzbottomNUMtxtbox[0].value = localStorage.tzbottomNUMtxtbox;
         $tzbottomTXTtxtbox[0].value = localStorage.tzbottomTXTtxtbox;
-        $weatherTXTColorPicker[0].value = localstorage.weatherTXTColorPicker;
-        $weatherBGColorPicker[0].value = localstorage.weatherBGColorPicker;
-        $bluetoothTXTColorPicker[0].value = localstorage.bluetoothTXTColorPicker;
-        $bluetoothBGColorPicker[0].value = localstorage.bluetoothBGColorPicker;
-        $batteryTXTColorPicker[0].value = localstorage.batteryTXTColorPicker;
-        $batteryBGColorPicker[0].value = localstorage.batteryBGColorPicker;
+        $weatherTXTColorPicker[0].value = localStorage.weatherTXTColorPicker;
+        $weatherBGColorPicker[0].value = localStorage.weatherBGColorPicker;
+        $bluetoothTXTColorPicker[0].value = localStorage.bluetoothTXTColorPicker;
+        $bluetoothBGColorPicker[0].value = localStorage.bluetoothBGColorPicker;
+        $batteryTXTColorPicker[0].value = localStorage.batteryTXTColorPicker;
+        $batteryBGColorPicker[0].value = localStorage.batteryBGColorPicker;
     }
 }
 
