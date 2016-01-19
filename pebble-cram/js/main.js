@@ -152,12 +152,12 @@ function getAndStoreConfigData() {
         tzmidTXTtxtbox: $tzmidTXTtxtbox.val(),
         tzbottomNUMtxtbox: $tzbottomNUMtxtbox.val(),
         tzbottomTXTtxtbox: $tzbottomTXTtxtbox.val(),
-        weatherTXTColorPicker = $weatherTXTColorPicker.val(),
-        weatherBGColorPicker = $weatherBGColorPicker.val(),
-        bluetoothTXTColorPicker = $bluetoothTXTColorPicker.val(),
-        bluetoothBGColorPicker = $bluetoothBGColorPicker.val(),
-        batteryTXTColorPicker = $batteryTXTColorPicker.val(),
-        batteryBGColorPicker = $batteryBGColorPicker.val()
+        weatherTXTColorPicker: $weatherTXTColorPicker.val(),
+        weatherBGColorPicker: $weatherBGColorPicker.val(),
+        bluetoothTXTColorPicker: $bluetoothTXTColorPicker.val(),
+        bluetoothBGColorPicker: $bluetoothBGColorPicker.val(),
+        batteryTXTColorPicker: $batteryTXTColorPicker.val(),
+        batteryBGColorPicker: $batteryBGColorPicker.val()
     };
 
     localStorage.cityweatherTXTtxtbox = options.cityweatherTXTtxtbox;
