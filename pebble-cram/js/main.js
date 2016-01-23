@@ -19,9 +19,7 @@ function cancelHandler() {
 
   $cancelButton.on('click', function() {
     console.log('Cancel');
-
-    var return_to = getQueryParam('return_to', 'pebblejs://close#');
-    document.location = return_to;
+	location.href = "pebblejs://close";
   });
 }
 
