@@ -14,6 +14,17 @@ function submitHandler() {
   });
 }
 
+function cancelHandler() {
+  var $cancelButton = $('#cancelButton');
+
+  $cancelButton.on('click', function() {
+    console.log('Cancel');
+
+    var return_to = getQueryParam('return_to', 'pebblejs://close#');
+    document.location = return_to;
+  });
+}
+
 function loadOptions() {
   var $cityweatherTXTtxtbox = $('#cityweatherTXTtxtbox');
   var $backgroundColorPicker = $('#backgroundColorPicker');
