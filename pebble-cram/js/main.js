@@ -1,6 +1,7 @@
 (function() {
     loadOptions();
     submitHandler();
+    cancelHandler();
 })();
 
 function submitHandler() {
