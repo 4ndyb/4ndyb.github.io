@@ -60,6 +60,10 @@ function loadOptions() {
     var $batteryBGColorPicker = $('#batteryBGColorPicker');
     var $bluetoothTXTColorPicker = $('#bluetoothTXTColorPicker');
     var $bluetoothBGColorPicker = $('#bluetoothBGColorPicker');
+    var $celciusTAB = $('#celciusTAB');
+    var $fahrenheitTAB = $('#fahrenheitTAB');
+    var $weatherlocationTOGGLE = $('#weatherlocationTOGGLE');
+    var $bluetoothdisconnectTOGGLE =$('#bluetoothdisconnectTOGGLE');
 
     if (localStorage.hourTXTColorPicker) {
         $cityweatherTXTtxtbox[0].value = localStorage.cityweatherTXTtxtbox;
@@ -95,6 +99,10 @@ function loadOptions() {
         $bluetoothBGColorPicker[0].value = localStorage.bluetoothBGColorPicker;
         $batteryTXTColorPicker[0].value = localStorage.batteryTXTColorPicker;
         $batteryBGColorPicker[0].value = localStorage.batteryBGColorPicker;
+        celciusTAB[0].value = localStorage.celciusTAB;
+        fahrenheitTAB[0].value = localStorage.fahrenheitTAB;
+        weatherlocationTOGGLE[0].value = localStorage.weatherlocationTOGGLE;
+        bluetoothdisconnectTOGGLE[0].value = localStorage.bluetoothdisconnectTOGGLE;
     }
 }
 
@@ -133,6 +141,10 @@ function getAndStoreConfigData() {
     var $batteryBGColorPicker = $('#batteryBGColorPicker');
     var $bluetoothTXTColorPicker = $('#bluetoothTXTColorPicker');
     var $bluetoothBGColorPicker = $('#bluetoothBGColorPicker');
+    var celciusTAB = $('#celciusTAB');
+    var fahrenheitTAB = $('#fahrenheitTAB');
+    var weatherlocationTOGGLE = $('#weatherlocationTOGGLE');
+    var bluetoothdisconnectTOGGLE = $('#bluetoothdisconnectTOGGLE');
 
     var options = {
         cityweatherTXTtxtbox: $cityweatherTXTtxtbox.val(),
@@ -168,7 +180,11 @@ function getAndStoreConfigData() {
         bluetoothTXTColorPicker: $bluetoothTXTColorPicker.val(),
         bluetoothBGColorPicker: $bluetoothBGColorPicker.val(),
         batteryTXTColorPicker: $batteryTXTColorPicker.val(),
-        batteryBGColorPicker: $batteryBGColorPicker.val()
+        batteryBGColorPicker: $batteryBGColorPicker.val(),
+        celciusTAB: $celciusTAB.val(),
+        fahrenheitTAB: $fahrenheitTAB.val(),
+        weatherlocationTOGGLE: $weatherlocationTOGGLE.val(),
+        bluetoothdisconnectTOGGLE: $bluetoothdisconnectTOGGLE.val()
     };
 
     localStorage.cityweatherTXTtxtbox = options.cityweatherTXTtxtbox;
@@ -205,6 +221,10 @@ function getAndStoreConfigData() {
     localStorage.batteryBGColorPicker = options.batteryBGColorPicker;
     localStorage.bluetoothTXTColorPicker = options.bluetoothTXTColorPicker;
     localStorage.bluetoothBGColorPicker = options.bluetoothBGColorPicker;
+    localStorage.celciusTAB = options.celciusTAB;
+    localStorage.fahrenheitTAB = options.fahrenheitTAB;
+    localStorage.weatherlocationTOGGLE = options.weatherlocationTOGGLE;
+    localStorage.bluetoothdisconnectTOGGLE = options.bluetoothdisconnectTOGGLE;
 
     console.log('Got options: ' + JSON.stringify(options));
     return options;
